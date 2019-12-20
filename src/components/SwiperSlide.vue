@@ -8,7 +8,7 @@
 
 <script>
   export default {
-    name: 'Swiper-slide'
+    name: 'SwiperSlide'
   }
 </script>
 

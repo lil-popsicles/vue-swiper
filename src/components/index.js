@@ -1,18 +1,16 @@
-import SwiperSlide from './components/SwiperSlide'
-import Swiper      from './components/Swiper'
+import Vue from 'vue'
+import SwiperSlide from './SwiperSlide'
+import Swiper      from './Swiper'
 
-const HeyloSwiper = {
-  install(Vue) {
-    Vue.component('heylo-swiper', Swiper)
-    Vue.component('swiper-slide', SwiperSlide)
-  }
-}
-// Automatic installation if Vue has been added to the global scope.
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(HeyloSwiper)
-}
 
-export default HeyloSwiper
-export {
-  Swiper
-}
+const Components = {
+  Swiper,
+  SwiperSlide
+};
+
+Object.keys(Components).forEach(name => {
+  Vue.component(name, Components[name]);
+});
+
+export default Components;
+

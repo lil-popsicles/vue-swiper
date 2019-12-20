@@ -1,4 +1,4 @@
-# popsicle-swider
+# popsicle-swiper
 
 ## Project setup
 ```
