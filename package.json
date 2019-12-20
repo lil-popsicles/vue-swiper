@@ -1,6 +1,6 @@
 {
   "name": "@popsicle/vue-swiper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./dist/popsicle.common.js",
   "files": [
     "dist/*",
@@ -9,6 +9,7 @@
     "*.json",
     "*.js"
   ],
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
