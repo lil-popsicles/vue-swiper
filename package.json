@@ -1,6 +1,6 @@
 {
   "name": "@popsicle/vue-swiper",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "./dist/popsicle.common.js",
   "files": [
     "dist/*js",
@@ -13,6 +13,14 @@
     "lint": "vue-cli-service lint",
     "build-lib": "vue-cli-service build --target lib --name popsicle  --plugin vue ./src/components/index.js"
   },
+  "keywords": [
+    "popsicle",
+    "vue-slider",
+    "vue-swiper",
+    "swiper",
+    "slider",
+    "touch-enabled slider"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:lil-popsicles/vue-swiper.git"
