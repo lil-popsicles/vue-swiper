@@ -1,16 +1,21 @@
 {
   "name": "@popsicle/vue-swiper",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "./dist/popsicle.common.js",
   "files": [
-    "dist/*"
+    "dist/*js",
+    "dist/*css"
   ],
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-lib": "vue-cli-service build --target lib --name popsicle ./src/components/index.js"
+    "build-lib": "vue-cli-service build --target lib --name popsicle  --plugin vue ./src/components/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lil-popsicles/vue-swiper.git"
   },
   "dependencies": {
     "autoprefixer": "^9.7.3",
