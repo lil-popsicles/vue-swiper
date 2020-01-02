@@ -47,19 +47,21 @@ Vue.use(Swiper)
 On a **component**
 ```vuejs
 <script>
-import Swiper from '@popsicle/vue-swiper'
+import {Swiper, SwiperSlide} from '@popsicle/vue-swiper'
 
 export default({
     component: {
-        vue-swiper: 'Swiper'
+        'swiper': 'Swiper',
+        'swiper-slide': 'SwiperSlide'
     }, 
     ...
 })
 </script>
 ```
 Then you can include it in your vue template as follows:
+
 ```vuejs
-<vue-swiper></vue-swiper>
+<swiper></swiper>
 ```
 #### Output:
 ```html
