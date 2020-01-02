@@ -5,7 +5,7 @@
     </div>
 
     <div class="swiper">
-      <swiper>
+      <swiper :navigation="false">
         <swiper-slide v-for="(i, index) in 10" :key="`slide-${index}`">{{`Slide ${i}`}}</swiper-slide>
       </swiper>
     </div>
@@ -15,7 +15,7 @@
 <script>
 
 export default {
-  name: 'app',
+  name: 'app'
 }
 </script>
 

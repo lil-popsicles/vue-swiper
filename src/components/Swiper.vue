@@ -56,6 +56,12 @@
             },
             navigation: {
                 default: true, type: Boolean, required: false
+            }, speed: {
+                default: 300, type: Number, required: false
+            }, initialSlide: {
+                default: 0, type: Number, required: false
+            }, direction: {
+                default: 'horizontal', type: String, required: false
             },
             breakpoints: {
                 type: Object,
@@ -73,6 +79,9 @@
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev'
                     },
+                    speed: this.speed,
+                    initialSlide: this.initialSlide,
+                    direction: this.direction,
                     spaceBetween: this.spaceBetween,
                     loop: this.loop,
                     slidesPerView: this.slidesPerView,
@@ -88,7 +97,7 @@
     }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
     .swiper-container {
         width: 100%;
         height: 100%;
@@ -101,18 +110,22 @@
         &:hover {
             .swiper-button-prev,
             .swiper-button-next {
-                @apply text-gray-500;
+                color: #a0aec0;
             }
         }
 
 
         .swiper-button-prev,
         .swiper-button-next {
-            @apply text-gray-100;
+            color: #f7fafc;
+
             &:after {
                 font-size: 18px;
             }
         }
     }
 
+    .hidden {
+        display: none;
+    }
 </style>
