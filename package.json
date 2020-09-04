@@ -28,7 +28,7 @@
   "dependencies": {
     "autoprefixer": "^9.7.3",
     "core-js": "^3.4.3",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "postcss": "^7.0.25",
     "sass-loader": "^8.0.0",
     "serve": "^11.2.0",
